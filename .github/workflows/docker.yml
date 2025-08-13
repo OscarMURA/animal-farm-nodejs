@@ -33,7 +33,7 @@ jobs:
           password: ${{ secrets.GHCR_TOKEN }} # GitHub Token with read:packages and write:packages scope
       -
         name: Build and push
-        uses: docker/build-push-action@v2
+        uses: docker/build-push-action@v5
         with:
           context: .
           file: ./Dockerfile
@@ -41,6 +41,7 @@ jobs:
           tags: |
             oscarpy/animal-farm-nodejs:latest
             ghcr.io/oscarmura/animal-farm-nodejs:latest
+
 
 
 
