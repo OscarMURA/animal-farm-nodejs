@@ -40,7 +40,8 @@ jobs:
           push: true
           tags: |
             oscarpy/animal-farm-nodejs:latest
-            ghcr.io/oscarpy/animal-farm-nodejs:latest
+            ghcr.io/oscarmura/animal-farm-nodejs:latest
+
 
 
 
